@@ -72,8 +72,10 @@ public class LoginController {
 	
 	//@RequestMapping(path = "/login", method = RequestMethod.POST)
 	@PostMapping("/login")
-	public String loginPOstPage(LoginDTO dto, HttpServletRequest request,
-			HttpSession session, HttpServletResponse resp)
+	public String loginPOstPage(LoginDTO dto,
+								HttpServletRequest request,
+								HttpSession session,
+								HttpServletResponse resp)
 	{
 		// POST
 		System.out.println("login request "+request.getMethod());
